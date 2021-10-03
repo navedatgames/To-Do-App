@@ -1,0 +1,36 @@
+input{
+    height: 3rem;
+    width: 20rem;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.submit{
+    background-color: brown;
+    
+}
+.clear{
+    height: 3rem;
+    width: 10rem;
+    font-size:2rem;
+    background-color: rgb(255, 217, 0);
+    
+}
+button{
+    height: 3rem;
+    width: 10rem;
+    font-size:2rem;
+}
+
+ul{
+    font-size:2rem
+}
+
+body{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+*{
+    box-sizing: border-box;
+}

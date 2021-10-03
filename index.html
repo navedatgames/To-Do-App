@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text"/>
+    <button class ="submit">Submit</button>
+    <button class ="clear">Clear</button>
+    <ul >
+
+    </ul>
+    <script>
+        let inputag = document.querySelector("[type = 'text']")
+        let val = inputag.value;
+        let submit = document.querySelector(".submit")
+        let clear = document.querySelector(".clear")
+        let ultag = document.querySelector("ul");
+
+
+        submit.addEventListener("click",function(){
+            let l1tag = document.createElement("li");
+            l1tag.innerText = inputag.value;
+
+            
+            ultag.append(l1tag);
+            l1tag.addEventListener("dblclick",function(){
+                l1tag.remove();
+            })
+
+            inputag.value = "";
+
+           
+        })
+        
+
+    </script>
+
+
+
+</body>
+</html>
